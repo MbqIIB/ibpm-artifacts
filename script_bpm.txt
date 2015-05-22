@@ -1,0 +1,70 @@
+var twSearch = new TWSearch();
+
+var taskId = new TWSearchColumn();
+taskId.type = TWSearchColumn.Types.Task;
+taskId.name = TWSearchColumn.TaskColumns.ID;
+
+var taskAssignedToRole = new TWSearchColumn();
+taskAssignedToRole.type = TWSearchColumn.Types.Task;
+taskAssignedToRole.name = TWSearchColumn.TaskColumns.AssignedToRole;
+
+var taskStatus = new TWSearchColumn();
+taskStatus.type = TWSearchColumn.Types.Task;
+taskStatus.name = TWSearchColumn.TaskColumns.Status;
+
+var taskSubject = new TWSearchColumn();
+taskSubject.type = TWSearchColumn.Types.Task;
+taskSubject.name = TWSearchColumn.TaskColumns.Subject;
+
+var taskReceivedDate = new TWSearchColumn();
+taskReceivedDate.type = TWSearchColumn.Types.Task;
+taskReceivedDate.name = TWSearchColumn.TaskColumns.ReceivedDate;
+
+var taskDueDate = new TWSearchColumn();
+taskDueDate.type = TWSearchColumn.Types.Task;
+taskDueDate.name = TWSearchColumn.TaskColumns.DueDate;
+
+var taskCloseDate = new TWSearchColumn();
+taskCloseDate.type = TWSearchColumn.Types.Task;
+taskCloseDate.name = TWSearchColumn.TaskColumns.ClosedDate;
+
+var instanceId = new TWSearchColumn();
+instanceId.type = TWSearchColumn.Types.ProcessInstance;
+instanceId.name = TWSearchColumn.ProcessInstanceColumns.ID;
+
+twSearch.columns = new Array(taskId, taskAssignedToRole, taskStatus, taskSubject, taskReceivedDate, taskDueDate, taskCloseDate, instanceId);
+
+var searchCondition = new TWSearchCondition();
+/*
+searchCondition.column = taskId;
+searchCondition.operator = TWSearchCondition.Operations.Equals;
+searchCondition.value = tw.local.taskId;
+*/
+searchCondition.column = taskSubject;
+searchCondition.operator = TWSearchCondition.Operations.Contains;
+searchCondition.value = "Task Test";
+
+twSearch.conditions = new Array(searchCondition);
+
+twSearch.organizedBy = TWSearch.OrganizeByTypes.Task;
+
+var results = twSearch.execute();
+
+if(results) {
+    tw.local.m_Result = new tw.object.listOf.String();
+
+    for (var i=0; i<results.rows.length; i++)
+    {
+        var row = results.rows[i];
+        
+        tw.local.m_Result.insertIntoList(i, row.values[0].toString());
+        if (row.values[1] != null)
+            tw.local.m_Result.insertIntoList(i, row.values[1].toString());
+        if (row.values[2] != null)
+            tw.local.m_Result.insertIntoList(i, row.values[2].toString());
+        if (row.values[3] != null)           
+            tw.local.m_Result.insertIntoList(i, row.values[3].toString());
+        if (row.values[4] != null)
+            tw.local.m_Result.insertIntoList(i, row.values[4].toString());
+    }
+}
