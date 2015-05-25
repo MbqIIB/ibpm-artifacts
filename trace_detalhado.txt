@@ -1,0 +1,230 @@
+com.ibm.ws.sca.internal.scdl.impl.ManagedModuleImpl ManagedModuleImpl.isNative returning true for module BP4IniciarTratamento_V3_4 Exit <<
+com.ibm.wsspi.sca.container.ComponentMetaDataManager  Context for classloader [
+com.ibm.wsspi.sca.container.ComponentMetaDataManager endContext Exit <<
+com.ibm.bpe.invocation.sca.SCAInvocationHandler.doinvoke(SCAInvocationHandler.java:486) RETURN 
+com.ibm.bpe.invocation.sca.SCAInvocationHandler.invoke(SCAInvocationHandler.java:355) RETURN
+com.ibm.bpe.engine.BpelActivityKindInvoke.doActivate(BpelActivityKindInvoke.java:746) got request  invocation correlationID: len=23 value= '95545066817781671196910187451191131077556511136655119'
+com.ibm.bpe.database.Tom.newAwaitedInvocation(Tom.java:9866) ENTRY
+com.ibm.bpe.database.Tom.newAwaitedInvocation(Tom.java:9872) RETURN
+com.ibm.bpe.engine.BpelAssignmentHandler.createActivityAdminTask(BpelAssignmentHandler.java:546) ENTRY
+com.ibm.bpe.engine.ProcessEngine.getTom(ProcessEngine.java:8997) RETURN Tom= com.ibm.bpe.database.TomExtended@ac888642 [ inGlobalTransaction : true, suspended : false , uncommittedUpdates : true, pooled : false, cacheVisibility : false]
+com.ibm.bpe.engine.ProcessEngine.getHumanTaskManagerPluginForAPI(ProcessEngine.java:9872) ENTRY
+com.ibm.bpe.engine.ProcessEngine.getHumanTaskManagerPluginForAPI(ProcessEngine.java:9890) RETURN com.ibm.bpe.plugins.HumanTaskManagerPluginImpl@dc96e97c
+com.ibm.bpe.plugins.HumanTaskManagerPluginImpl.existsActivityWorkItem(HumanTaskManagerPluginImpl.java:1058) ENTRY _AI:9004014d.7ce5f45f.fec7573f.ec4300a8
+com.ibm.bpe.engine.ProcessEngine.getTom(ProcessEngine.java:8997) RETURN Tom= com.ibm.bpe.database.TomExtended@ac888642 [ inGlobalTransaction : true, suspended : false , uncommittedUpdates : true, pooled : false, cacheVisibility : false]
+com.ibm.bpe.engine.ProcessEngine.getTom(ProcessEngine.java:8997) RETURN Tom= com.ibm.bpe.database.TomExtended@ac888642 [ inGlobalTransaction : true, suspended : false , uncommittedUpdates : true, pooled : false, cacheVisibility : false]
+com.ibm.task.util.UserRegistryProxy.getGroupsForCurrentUser(UserRegistryProxy.java:177) ENTRY
+com.ibm.task.util.UserRegistryProxy.getGroupsForSubject(UserRegistryProxy.java:224) ENTRY
+com.ibm.task.util.UserRegistryProxy.getGroupsForSubject(UserRegistryProxy.java:239) Caller principal (security) name: admin1
+com.ibm.task.util.UserRegistryProxy.getGroupsForSubject(UserRegistryProxy.java:240) Group IDs retrieved by getGroupIds(): [group:defaultWIMFileBasedRealm/cn=G_BPM_BP4_GERENCIAL,o=defaultWIMFileBasedRealm, group:defaultWIMFileBasedRealm/cn=G_BPM_BP4_ADMCELULA,o=defaultWIMFileBasedRealm, group:defaultWIMFileBasedRealm/cn=G_BPM_BP4_ADMPROCESSO,o=defaultWIMFileBasedRealm, group:defaultWIMFileBasedRealm/cn=G_BPM_BP4_INIPROCESSO,o=defaultWIMFileBasedRealm, group:defaultWIMFileBasedRealm/cn=GRUPO_C,o=defaultWIMFileBasedRealm, group:defaultWIMFileBasedRealm/cn=GRUPO_A,o=defaultWIMFileBasedRealm, group:defaultWIMFileBasedRealm/cn=G_BPM_BP4_ADMTAREFA,o=defaultWIMFileBasedRealm, group:defaultWIMFileBasedRealm/cn=G_BPM_BP4_OPERACIONAL,o=defaultWIMFileBasedRealm, group:defaultWIMFileBasedRealm/cn=GRUPO_B,o=defaultWIMFileBasedRealm]
+com.ibm.task.util.UserRegistryProxy.translateSecurityGroupName(UserRegistryProxy.java:931) ENTRY group:defaultWIMFileBasedRealm/cn=G_BPM_BP4_GERENCIAL,o=defaultWIMFileBasedRealm
+com.ibm.task.util.HTMEnvironment.getUserRegistry(HTMEnvironment.java:1248) RETURN UserRegistry: _isLDAPRegistry: false _useDisplayName: false_isWindowsRegistry: false_isVMMRegistry: true
+com.ibm.task.util.UserRegistryProxy.translateSecurityGroupName(UserRegistryProxy.java:1049) RETURN Group ID 'group:defaultWIMFileBasedRealm/cn=G_BPM_BP4_GERENCIAL,o=defaultWIMFileBasedRealm' translated to group security name: cn=G_BPM_BP4_GERENCIAL,o=defaultWIMFileBasedRealm
+com.ibm.task.util.UserRegistryProxy.translateSecurityGroupName(UserRegistryProxy.java:931) ENTRY group:defaultWIMFileBasedRealm/cn=G_BPM_BP4_ADMCELULA,o=defaultWIMFileBasedRealm
+com.ibm.task.util.HTMEnvironment.getUserRegistry(HTMEnvironment.java:1248) RETURN UserRegistry: _isLDAPRegistry: false _useDisplayName: false_isWindowsRegistry: false_isVMMRegistry: true
+com.ibm.task.util.UserRegistryProxy.translateSecurityGroupName(UserRegistryProxy.java:1049) RETURN Group ID 'group:defaultWIMFileBasedRealm/cn=G_BPM_BP4_ADMCELULA,o=defaultWIMFileBasedRealm' translated to group security name: cn=G_BPM_BP4_ADMCELULA,o=defaultWIMFileBasedRealm
+com.ibm.task.util.UserRegistryProxy.translateSecurityGroupName(UserRegistryProxy.java:931) ENTRY group:defaultWIMFileBasedRealm/cn=G_BPM_BP4_ADMPROCESSO,o=defaultWIMFileBasedRealm
+com.ibm.task.util.HTMEnvironment.getUserRegistry(HTMEnvironment.java:1248) RETURN UserRegistry: _isLDAPRegistry: false _useDisplayName: false_isWindowsRegistry: false_isVMMRegistry: true
+com.ibm.task.util.UserRegistryProxy.translateSecurityGroupName(UserRegistryProxy.java:1049) RETURN Group ID 'group:defaultWIMFileBasedRealm/cn=G_BPM_BP4_ADMPROCESSO,o=defaultWIMFileBasedRealm' translated to group security name: cn=G_BPM_BP4_ADMPROCESSO,o=defaultWIMFileBasedRealm
+com.ibm.task.util.UserRegistryProxy.translateSecurityGroupName(UserRegistryProxy.java:931) ENTRY group:defaultWIMFileBasedRealm/cn=G_BPM_BP4_INIPROCESSO,o=defaultWIMFileBasedRealm
+com.ibm.task.util.HTMEnvironment.getUserRegistry(HTMEnvironment.java:1248) RETURN UserRegistry: _isLDAPRegistry: false _useDisplayName: false_isWindowsRegistry: false_isVMMRegistry: true
+com.ibm.task.util.UserRegistryProxy.translateSecurityGroupName(UserRegistryProxy.java:1049) RETURN Group ID 'group:defaultWIMFileBasedRealm/cn=G_BPM_BP4_INIPROCESSO,o=defaultWIMFileBasedRealm' translated to group security name: cn=G_BPM_BP4_INIPROCESSO,o=defaultWIMFileBasedRealm
+com.ibm.task.util.UserRegistryProxy.translateSecurityGroupName(UserRegistryProxy.java:931) ENTRY group:defaultWIMFileBasedRealm/cn=GRUPO_C,o=defaultWIMFileBasedRealm
+com.ibm.task.util.HTMEnvironment.getUserRegistry(HTMEnvironment.java:1248) RETURN UserRegistry: _isLDAPRegistry: false _useDisplayName: false_isWindowsRegistry: false_isVMMRegistry: true
+com.ibm.task.util.UserRegistryProxy.translateSecurityGroupName(UserRegistryProxy.java:1049) RETURN Group ID 'group:defaultWIMFileBasedRealm/cn=GRUPO_C,o=defaultWIMFileBasedRealm' translated to group security name: cn=GRUPO_C,o=defaultWIMFileBasedRealm
+com.ibm.task.util.UserRegistryProxy.translateSecurityGroupName(UserRegistryProxy.java:931) ENTRY group:defaultWIMFileBasedRealm/cn=GRUPO_A,o=defaultWIMFileBasedRealm
+com.ibm.task.util.HTMEnvironment.getUserRegistry(HTMEnvironment.java:1248) RETURN UserRegistry: _isLDAPRegistry: false _useDisplayName: false_isWindowsRegistry: false_isVMMRegistry: true
+com.ibm.task.util.UserRegistryProxy.translateSecurityGroupName(UserRegistryProxy.java:1049) RETURN Group ID 'group:defaultWIMFileBasedRealm/cn=GRUPO_A,o=defaultWIMFileBasedRealm' translated to group security name: cn=GRUPO_A,o=defaultWIMFileBasedRealm
+com.ibm.task.util.UserRegistryProxy.translateSecurityGroupName(UserRegistryProxy.java:931) ENTRY group:defaultWIMFileBasedRealm/cn=G_BPM_BP4_ADMTAREFA,o=defaultWIMFileBasedRealm
+com.ibm.task.util.HTMEnvironment.getUserRegistry(HTMEnvironment.java:1248) RETURN UserRegistry: _isLDAPRegistry: false _useDisplayName: false_isWindowsRegistry: false_isVMMRegistry: true
+com.ibm.task.util.UserRegistryProxy.translateSecurityGroupName(UserRegistryProxy.java:1049) RETURN Group ID 'group:defaultWIMFileBasedRealm/cn=G_BPM_BP4_ADMTAREFA,o=defaultWIMFileBasedRealm' translated to group security name: cn=G_BPM_BP4_ADMTAREFA,o=defaultWIMFileBasedRealm
+com.ibm.task.util.UserRegistryProxy.translateSecurityGroupName(UserRegistryProxy.java:931) ENTRY group:defaultWIMFileBasedRealm/cn=G_BPM_BP4_OPERACIONAL,o=defaultWIMFileBasedRealm
+com.ibm.task.util.HTMEnvironment.getUserRegistry(HTMEnvironment.java:1248) RETURN UserRegistry: _isLDAPRegistry: false _useDisplayName: false_isWindowsRegistry: false_isVMMRegistry: true
+com.ibm.task.util.UserRegistryProxy.translateSecurityGroupName(UserRegistryProxy.java:1049) RETURN Group ID 'group:defaultWIMFileBasedRealm/cn=G_BPM_BP4_OPERACIONAL,o=defaultWIMFileBasedRealm' translated to group security name: cn=G_BPM_BP4_OPERACIONAL,o=defaultWIMFileBasedRealm
+com.ibm.task.util.UserRegistryProxy.translateSecurityGroupName(UserRegistryProxy.java:931) ENTRY group:defaultWIMFileBasedRealm/cn=GRUPO_B,o=defaultWIMFileBasedRealm
+com.ibm.task.util.HTMEnvironment.getUserRegistry(HTMEnvironment.java:1248) RETURN UserRegistry: _isLDAPRegistry: false _useDisplayName: false_isWindowsRegistry: false_isVMMRegistry: true
+com.ibm.task.util.UserRegistryProxy.translateSecurityGroupName(UserRegistryProxy.java:1049) RETURN Group ID 'group:defaultWIMFileBasedRealm/cn=GRUPO_B,o=defaultWIMFileBasedRealm' translated to group security name: cn=GRUPO_B,o=defaultWIMFileBasedRealm
+com.ibm.task.util.UserRegistryProxy.getGroupsForSubject(UserRegistryProxy.java:281) RETURN 9
+com.ibm.task.util.UserRegistryProxy.getGroupsForCurrentUser(UserRegistryProxy.java:203) RETURN 9
+com.ibm.task.core.CallbackForBpelFlowManager.existsActivityWorkitem(CallbackForBpelFlowManager.java:2646) ENTRY _AI:9004014d.7ce5f45f.fec7573f.ec4300a8
+com.ibm.bpe.database.TomExtended.getWorkItemManager(TomExtended.java:1422) com.ibm.bpe.database.WorkItemManagerImpl@43b97a4e
+com.ibm.bpe.database.DbAccWorkItem.openFetchParentWorkItemByObjectReason(DbAccWorkItem.java:574) SELECT WIID, PARENT_WIID, OWNER_ID, GROUP_NAME, EVERYBODY, EXCLUDE, QIID, OBJECT_TYPE, OBJECT_ID, ASSOCIATED_OBJECT_TYPE, ASSOCIATED_OID, REASON, CREATION_TIME, KIND, AUTH_INFO, VERSION_ID FROM BPM8BPC.WORK_ITEM_T WHERE (OBJECT_TYPE = ?) AND (OBJECT_ID = HEXTORAW(?)) AND (REASON = ?) AND (PARENT_WIID IS NULL) 
+com.ibm.bpe.database.DbAccWorkItem.openFetchParentWorkItemByObjectReason(DbAccWorkItem.java:580) set 1 = 1
+com.ibm.bpe.database.DbAccWorkItem.openFetchParentWorkItemByObjectReason(DbAccWorkItem.java:582) set 2 = _AI:9004014d.7ce5f45f.fec7573f.ec4300a8
+com.ibm.bpe.database.DbAccWorkItem.openFetchParentWorkItemByObjectReason(DbAccWorkItem.java:584) set 3 = 3
+com.ibm.bpe.database.DbAccWorkItem.openFetchParentWorkItemByObjectReason(DbAccWorkItem.java:574) SELECT WIID, PARENT_WIID, OWNER_ID, GROUP_NAME, EVERYBODY, EXCLUDE, QIID, OBJECT_TYPE, OBJECT_ID, ASSOCIATED_OBJECT_TYPE, ASSOCIATED_OID, REASON, CREATION_TIME, KIND, AUTH_INFO, VERSION_ID FROM BPM8BPC.WORK_ITEM_T WHERE (OBJECT_TYPE = ?) AND (OBJECT_ID = HEXTORAW(?)) AND (REASON = ?) AND (PARENT_WIID IS NULL) 
+com.ibm.bpe.database.DbAccWorkItem.openFetchParentWorkItemByObjectReason(DbAccWorkItem.java:580) set 1 = 1
+com.ibm.bpe.database.DbAccWorkItem.openFetchParentWorkItemByObjectReason(DbAccWorkItem.java:582) set 2 = _AI:9004014d.7ce5f45f.fec7573f.ec4300a8
+com.ibm.bpe.database.DbAccWorkItem.openFetchParentWorkItemByObjectReason(DbAccWorkItem.java:584) set 3 = 7
+com.ibm.task.core.CallbackForBpelFlowManager.existsActivityWorkitem(CallbackForBpelFlowManager.java:2672) RETURN false
+com.ibm.bpe.plugins.HumanTaskManagerPluginImpl.existsActivityWorkItem(HumanTaskManagerPluginImpl.java:1064) RETURN false
+com.ibm.bpe.util.Environment.get(Environment.java:175) ENTRY ProcessAdministration
+com.ibm.bpe.util.Environment.get(Environment.java:190) RETURN null
+com.ibm.bpe.util.Environment.getProcessAdministration(Environment.java:1100) ENTRY null
+com.ibm.bpe.util.Environment.getProcessAdministration(Environment.java:1115) RETURN notSet
+com.ibm.bpe.engine.ProcessEngine.getTom(ProcessEngine.java:8997) RETURN Tom= com.ibm.bpe.database.TomExtended@ac888642 [ inGlobalTransaction : true, suspended : false , uncommittedUpdates : true, pooled : false, cacheVisibility : false]
+com.ibm.bpe.engine.BpelAssignmentHandler.getWorkItemObjectIds(BpelAssignmentHandler.java:668) No scope admin found for _SI:9010014d.7ce5ba9a.fec7573f.ec43003e
+com.ibm.bpe.plugins.HumanTaskManagerPluginImpl.createAndStartAdminTask(HumanTaskManagerPluginImpl.java:671) ENTRY
+com.ibm.bpe.engine.ProcessEngine.getTom(ProcessEngine.java:8997) RETURN Tom= com.ibm.bpe.database.TomExtended@ac888642 [ inGlobalTransaction : true, suspended : false , uncommittedUpdates : true, pooled : false, cacheVisibility : false]
+com.ibm.bpe.engine.ProcessEngine.getTom(ProcessEngine.java:8997) RETURN Tom= com.ibm.bpe.database.TomExtended@ac888642 [ inGlobalTransaction : true, suspended : false , uncommittedUpdates : true, pooled : false, cacheVisibility : false]
+com.ibm.task.util.UserRegistryProxy.getGroupsForCurrentUser(UserRegistryProxy.java:177) ENTRY
+com.ibm.task.util.UserRegistryProxy.getGroupsForSubject(UserRegistryProxy.java:224) ENTRY
+com.ibm.task.util.UserRegistryProxy.getGroupsForSubject(UserRegistryProxy.java:239) Caller principal (security) name: admin1
+com.ibm.task.util.UserRegistryProxy.getGroupsForSubject(UserRegistryProxy.java:240) Group IDs retrieved by getGroupIds(): [group:defaultWIMFileBasedRealm/cn=G_BPM_BP4_GERENCIAL,o=defaultWIMFileBasedRealm, group:defaultWIMFileBasedRealm/cn=G_BPM_BP4_ADMCELULA,o=defaultWIMFileBasedRealm, group:defaultWIMFileBasedRealm/cn=G_BPM_BP4_ADMPROCESSO,o=defaultWIMFileBasedRealm, group:defaultWIMFileBasedRealm/cn=G_BPM_BP4_INIPROCESSO,o=defaultWIMFileBasedRealm, group:defaultWIMFileBasedRealm/cn=GRUPO_C,o=defaultWIMFileBasedRealm, group:defaultWIMFileBasedRealm/cn=GRUPO_A,o=defaultWIMFileBasedRealm, group:defaultWIMFileBasedRealm/cn=G_BPM_BP4_ADMTAREFA,o=defaultWIMFileBasedRealm, group:defaultWIMFileBasedRealm/cn=G_BPM_BP4_OPERACIONAL,o=defaultWIMFileBasedRealm, group:defaultWIMFileBasedRealm/cn=GRUPO_B,o=defaultWIMFileBasedRealm]
+com.ibm.task.util.UserRegistryProxy.translateSecurityGroupName(UserRegistryProxy.java:931) ENTRY group:defaultWIMFileBasedRealm/cn=G_BPM_BP4_GERENCIAL,o=defaultWIMFileBasedRealm
+com.ibm.task.util.HTMEnvironment.getUserRegistry(HTMEnvironment.java:1248) RETURN UserRegistry: _isLDAPRegistry: false _useDisplayName: false_isWindowsRegistry: false_isVMMRegistry: true
+com.ibm.task.util.UserRegistryProxy.translateSecurityGroupName(UserRegistryProxy.java:1049) RETURN Group ID 'group:defaultWIMFileBasedRealm/cn=G_BPM_BP4_GERENCIAL,o=defaultWIMFileBasedRealm' translated to group security name: cn=G_BPM_BP4_GERENCIAL,o=defaultWIMFileBasedRealm
+com.ibm.task.util.UserRegistryProxy.translateSecurityGroupName(UserRegistryProxy.java:931) ENTRY group:defaultWIMFileBasedRealm/cn=G_BPM_BP4_ADMCELULA,o=defaultWIMFileBasedRealm
+com.ibm.task.util.HTMEnvironment.getUserRegistry(HTMEnvironment.java:1248) RETURN UserRegistry: _isLDAPRegistry: false _useDisplayName: false_isWindowsRegistry: false_isVMMRegistry: true
+com.ibm.task.util.UserRegistryProxy.translateSecurityGroupName(UserRegistryProxy.java:1049) RETURN Group ID 'group:defaultWIMFileBasedRealm/cn=G_BPM_BP4_ADMCELULA,o=defaultWIMFileBasedRealm' translated to group security name: cn=G_BPM_BP4_ADMCELULA,o=defaultWIMFileBasedRealm
+com.ibm.task.util.UserRegistryProxy.translateSecurityGroupName(UserRegistryProxy.java:931) ENTRY group:defaultWIMFileBasedRealm/cn=G_BPM_BP4_ADMPROCESSO,o=defaultWIMFileBasedRealm
+com.ibm.task.util.HTMEnvironment.getUserRegistry(HTMEnvironment.java:1248) RETURN UserRegistry: _isLDAPRegistry: false _useDisplayName: false_isWindowsRegistry: false_isVMMRegistry: true
+com.ibm.task.util.UserRegistryProxy.translateSecurityGroupName(UserRegistryProxy.java:1049) RETURN Group ID 'group:defaultWIMFileBasedRealm/cn=G_BPM_BP4_ADMPROCESSO,o=defaultWIMFileBasedRealm' translated to group security name: cn=G_BPM_BP4_ADMPROCESSO,o=defaultWIMFileBasedRealm
+com.ibm.task.util.UserRegistryProxy.translateSecurityGroupName(UserRegistryProxy.java:931) ENTRY group:defaultWIMFileBasedRealm/cn=G_BPM_BP4_INIPROCESSO,o=defaultWIMFileBasedRealm
+com.ibm.task.util.HTMEnvironment.getUserRegistry(HTMEnvironment.java:1248) RETURN UserRegistry: _isLDAPRegistry: false _useDisplayName: false_isWindowsRegistry: false_isVMMRegistry: true
+com.ibm.task.util.UserRegistryProxy.translateSecurityGroupName(UserRegistryProxy.java:1049) RETURN Group ID 'group:defaultWIMFileBasedRealm/cn=G_BPM_BP4_INIPROCESSO,o=defaultWIMFileBasedRealm' translated to group security name: cn=G_BPM_BP4_INIPROCESSO,o=defaultWIMFileBasedRealm
+com.ibm.task.util.UserRegistryProxy.translateSecurityGroupName(UserRegistryProxy.java:931) ENTRY group:defaultWIMFileBasedRealm/cn=GRUPO_C,o=defaultWIMFileBasedRealm
+com.ibm.task.util.HTMEnvironment.getUserRegistry(HTMEnvironment.java:1248) RETURN UserRegistry: _isLDAPRegistry: false _useDisplayName: false_isWindowsRegistry: false_isVMMRegistry: true
+com.ibm.task.util.UserRegistryProxy.translateSecurityGroupName(UserRegistryProxy.java:1049) RETURN Group ID 'group:defaultWIMFileBasedRealm/cn=GRUPO_C,o=defaultWIMFileBasedRealm' translated to group security name: cn=GRUPO_C,o=defaultWIMFileBasedRealm
+com.ibm.task.util.UserRegistryProxy.translateSecurityGroupName(UserRegistryProxy.java:931) ENTRY group:defaultWIMFileBasedRealm/cn=GRUPO_A,o=defaultWIMFileBasedRealm
+com.ibm.task.util.HTMEnvironment.getUserRegistry(HTMEnvironment.java:1248) RETURN UserRegistry: _isLDAPRegistry: false _useDisplayName: false_isWindowsRegistry: false_isVMMRegistry: true
+com.ibm.task.util.UserRegistryProxy.translateSecurityGroupName(UserRegistryProxy.java:1049) RETURN Group ID 'group:defaultWIMFileBasedRealm/cn=GRUPO_A,o=defaultWIMFileBasedRealm' translated to group security name: cn=GRUPO_A,o=defaultWIMFileBasedRealm
+com.ibm.task.util.UserRegistryProxy.translateSecurityGroupName(UserRegistryProxy.java:931) ENTRY group:defaultWIMFileBasedRealm/cn=G_BPM_BP4_ADMTAREFA,o=defaultWIMFileBasedRealm
+com.ibm.task.util.HTMEnvironment.getUserRegistry(HTMEnvironment.java:1248) RETURN UserRegistry: _isLDAPRegistry: false _useDisplayName: false_isWindowsRegistry: false_isVMMRegistry: true
+com.ibm.task.util.UserRegistryProxy.translateSecurityGroupName(UserRegistryProxy.java:1049) RETURN Group ID 'group:defaultWIMFileBasedRealm/cn=G_BPM_BP4_ADMTAREFA,o=defaultWIMFileBasedRealm' translated to group security name: cn=G_BPM_BP4_ADMTAREFA,o=defaultWIMFileBasedRealm
+com.ibm.task.util.UserRegistryProxy.translateSecurityGroupName(UserRegistryProxy.java:931) ENTRY group:defaultWIMFileBasedRealm/cn=G_BPM_BP4_OPERACIONAL,o=defaultWIMFileBasedRealm
+com.ibm.task.util.HTMEnvironment.getUserRegistry(HTMEnvironment.java:1248) RETURN UserRegistry: _isLDAPRegistry: false _useDisplayName: false_isWindowsRegistry: false_isVMMRegistry: true
+com.ibm.task.util.UserRegistryProxy.translateSecurityGroupName(UserRegistryProxy.java:1049) RETURN Group ID 'group:defaultWIMFileBasedRealm/cn=G_BPM_BP4_OPERACIONAL,o=defaultWIMFileBasedRealm' translated to group security name: cn=G_BPM_BP4_OPERACIONAL,o=defaultWIMFileBasedRealm
+com.ibm.task.util.UserRegistryProxy.translateSecurityGroupName(UserRegistryProxy.java:931) ENTRY group:defaultWIMFileBasedRealm/cn=GRUPO_B,o=defaultWIMFileBasedRealm
+com.ibm.task.util.HTMEnvironment.getUserRegistry(HTMEnvironment.java:1248) RETURN UserRegistry: _isLDAPRegistry: false _useDisplayName: false_isWindowsRegistry: false_isVMMRegistry: true
+com.ibm.task.util.UserRegistryProxy.translateSecurityGroupName(UserRegistryProxy.java:1049) RETURN Group ID 'group:defaultWIMFileBasedRealm/cn=GRUPO_B,o=defaultWIMFileBasedRealm' translated to group security name: cn=GRUPO_B,o=defaultWIMFileBasedRealm
+com.ibm.task.util.UserRegistryProxy.getGroupsForSubject(UserRegistryProxy.java:281) RETURN 9
+com.ibm.task.util.UserRegistryProxy.getGroupsForCurrentUser(UserRegistryProxy.java:203) RETURN 9
+com.ibm.task.core.CallbackForBpelFlowManager.createAndStartAdminTask(CallbackForBpelFlowManager.java:931) ENTRY _TKT:a01a014d.2965f435.fec7573f.f91502d6 _AI:9004014d.7ce5f45f.fec7573f.ec4300a8
+com.ibm.task.core.CoreHelper.createTask(CoreHelper.java:1877) ENTRY TKTID = _TKT:a01a014d.2965f435.fec7573f.f91502d6 - RHdlr = null - inpMsg = null
+com.ibm.bpe.database.Tom.newTaskInstance(Tom.java:17329) ENTRY persistent
+com.ibm.bpe.database.Tom.newTaskInstance(Tom.java:17333) RETURN _TKI:a01b014d.7ce61149.fec7573f.ec4300a9
+com.ibm.task.core.CoreHelper.setJNDINameStaffProvider(CoreHelper.java:5832) ENTRY _TKI:a01b014d.7ce61149.fec7573f.ec4300a9
+com.ibm.task.core.CoreHelper.setJNDINameStaffProvider(CoreHelper.java:5865) RETURN bpe/staff/samplevmmconfiguration
+com.ibm.task.core.CustomPropertyHelper.copyCustomPropertiesFromTemplate(CustomPropertyHelper.java:80) ENTRY _TKT:a01a014d.2965f435.fec7573f.f91502d6 _TKI:a01b014d.7ce61149.fec7573f.ec4300a9
+com.ibm.task.core.CoreHelper.getContainmentCtxIdForTaskArtifacts(CoreHelper.java:3276) ENTRY _TKI:a01b014d.7ce61149.fec7573f.ec4300a9
+com.ibm.task.core.CoreHelper.getContainmentCtxIdForTaskArtifacts(CoreHelper.java:3286) topCCID=_PI:9003014d.7ce5b8ac.fec7573f.ec430033
+com.ibm.task.core.CoreHelper.getContainmentCtxIdForTaskArtifacts(CoreHelper.java:3307) RETURN _PI:9003014d.7ce5b8ac.fec7573f.ec430033
+com.ibm.task.core.CustomPropertyHelper.copyCustomPropertiesFromTemplate(CustomPropertyHelper.java:110) RETURN
+com.ibm.bpe.database.DbAccTaskInstLDesc.select(DbAccTaskInstLDesc.java:451) SELECT TKIID, LOCALE, CONTAINMENT_CONTEXT_ID, DISPLAY_NAME, DESCRIPTION, VERSION_ID FROM BPM8BPC.TASK_INST_LDESC_T WHERE (TKIID = HEXTORAW(?)) AND (LOCALE = ?) FOR UPDATE
+com.ibm.bpe.database.DbAccTaskInstLDesc.select(DbAccTaskInstLDesc.java:456) set 1 = _TKI:a01b014d.7ce61149.fec7573f.ec4300a9
+com.ibm.bpe.database.DbAccTaskInstLDesc.select(DbAccTaskInstLDesc.java:458) set 2 = default
+com.ibm.bpe.database.Tom.newTaskInstLDesc(Tom.java:18279) ENTRY _TKI:a01b014d.7ce61149.fec7573f.ec4300a9 / default
+com.ibm.bpe.database.Tom.newTaskInstLDesc(Tom.java:18283) RETURN
+com.ibm.task.core.CoreHelper.getContainmentCtxIdForTaskArtifacts(CoreHelper.java:3276) ENTRY _TKI:a01b014d.7ce61149.fec7573f.ec4300a9
+com.ibm.task.core.CoreHelper.getContainmentCtxIdForTaskArtifacts(CoreHelper.java:3286) topCCID=_PI:9003014d.7ce5b8ac.fec7573f.ec430033
+com.ibm.task.core.CoreHelper.getContainmentCtxIdForTaskArtifacts(CoreHelper.java:3307) RETURN _PI:9003014d.7ce5b8ac.fec7573f.ec430033
+com.ibm.bpe.database.DbAccTaskInstLDesc.select(DbAccTaskInstLDesc.java:451) SELECT TKIID, LOCALE, CONTAINMENT_CONTEXT_ID, DISPLAY_NAME, DESCRIPTION, VERSION_ID FROM BPM8BPC.TASK_INST_LDESC_T WHERE (TKIID = HEXTORAW(?)) AND (LOCALE = ?) FOR UPDATE
+com.ibm.bpe.database.DbAccTaskInstLDesc.select(DbAccTaskInstLDesc.java:456) set 1 = _TKI:a01b014d.7ce61149.fec7573f.ec4300a9
+com.ibm.bpe.database.DbAccTaskInstLDesc.select(DbAccTaskInstLDesc.java:458) set 2 = pt_BR
+com.ibm.bpe.database.Tom.newTaskInstLDesc(Tom.java:18279) ENTRY _TKI:a01b014d.7ce61149.fec7573f.ec4300a9 / pt_BR
+com.ibm.bpe.database.Tom.newTaskInstLDesc(Tom.java:18283) RETURN
+com.ibm.task.core.CoreHelper.getContainmentCtxIdForTaskArtifacts(CoreHelper.java:3276) ENTRY _TKI:a01b014d.7ce61149.fec7573f.ec4300a9
+com.ibm.task.core.CoreHelper.getContainmentCtxIdForTaskArtifacts(CoreHelper.java:3286) topCCID=_PI:9003014d.7ce5b8ac.fec7573f.ec430033
+com.ibm.task.core.CoreHelper.getContainmentCtxIdForTaskArtifacts(CoreHelper.java:3307) RETURN _PI:9003014d.7ce5b8ac.fec7573f.ec430033
+com.ibm.task.core.CoreHelper.resolveTaskPriority(CoreHelper.java:5115) ENTRY TKTID = _TKT:a01a014d.2965f435.fec7573f.f91502d6 - TKIID = _TKI:a01b014d.7ce61149.fec7573f.ec4300a9
+com.ibm.task.core.VariableHandler.replaceVariables(VariableHandler.java:1791) ENTRY %wf:variable.prioridadeOcorrencia%
+com.ibm.task.core.VariableHandler.getContextData(VariableHandler.java:1324) ENTRY IniciarTratamento$SLAAdminTask - ContextKey = wf:variable.prioridadeOcorrencia
+com.ibm.task.core.VariableHandler.resolveProcessContextVariable(VariableHandler.java:2075) Invoke BFM to resolve variable: wf:variable.prioridadeOcorrencia
+com.ibm.bpe.framework.ProcessEnginePool.getInstance(ProcessEnginePool.java:91) ENTRY
+com.ibm.bpe.framework.ProcessEnginePool.getInstance(ProcessEnginePool.java:95) RETURN com.ibm.bpe.framework.ProcessEnginePool@f61135cc
+com.ibm.bpe.framework.ProcessEnginePool.createNonReusableEngine(ProcessEnginePool.java:83) ENTRY
+com.ibm.bpe.engine.ProcessEngine.setIsReusable(ProcessEngine.java:9811) new reusability: false
+com.ibm.bpe.framework.ProcessEnginePool.createNonReusableEngine(ProcessEnginePool.java:86) RETURN com.ibm.bpe.engine.ProcessEngine@dcb34986
+com.ibm.bpe.database.helper.TomAbstractFactory.getTom(TomAbstractFactory.java:114) ENTRY
+com.ibm.bpe.database.helper.DbTransactionHelperImpl.isInGlobalTransaction(DbTransactionHelperImpl.java:79) true
+com.ibm.bpe.database.helper.TomAbstractFactory$UsedTomMap.get(597) ENTRY TomKey [0000009f, 1938028020], used for key : [com.ibm.bpe.database.TomExtended@ac888642 [ inGlobalTransaction : true, suspended : false , uncommittedUpdates : true, pooled : false, cacheVisibility : false]]
+com.ibm.bpe.database.helper.TomAbstractFactory$UsedTomMap.get(607) RETURN com.ibm.bpe.database.TomExtended@ac888642 [ inGlobalTransaction : true, suspended : false , uncommittedUpdates : true, pooled : false, cacheVisibility : false]
+com.ibm.bpe.database.helper.TomAbstractFactory.getTom(TomAbstractFactory.java:180) RETURN com.ibm.bpe.database.TomExtended@ac888642 [ inGlobalTransaction : true, suspended : false , uncommittedUpdates : true, pooled : false, cacheVisibility : false]
+com.ibm.bpe.database.TomExtended.registerStateChangeCallback(TomExtended.java:300) com.ibm.bpe.engine.ProcessEngine@dcb34986
+com.ibm.bpe.engine.ProcessEngine.getTom(ProcessEngine.java:8992) cache Tom and register StateChangeCallback. Tom= com.ibm.bpe.database.TomExtended@ac888642 [ inGlobalTransaction : true, suspended : false , uncommittedUpdates : true, pooled : false, cacheVisibility : false]
+com.ibm.bpe.engine.ProcessEngine.getTom(ProcessEngine.java:8997) RETURN Tom= com.ibm.bpe.database.TomExtended@ac888642 [ inGlobalTransaction : true, suspended : false , uncommittedUpdates : true, pooled : false, cacheVisibility : false]
+com.ibm.bpe.engine.ProcessEngine.setEventLocalCount(ProcessEngine.java:10212) ENTRY 48
+com.ibm.bpe.engine.ProcessEngine.setEventLocalCount(ProcessEngine.java:10216) RETURN
+com.ibm.bpe.engine.ProcessEngine.setIsThreadContextRestored(ProcessEngine.java:10272) isThreadContextRestored: true
+com.ibm.bpe.engine.CallbackForHumanTaskManager.resolveProcessContext(CallbackForHumanTaskManager.java:653) ENTRY _PI:9003014d.7ce5b8ac.fec7573f.ec430033 wf:variable.prioridadeOcorrencia
+com.ibm.bpe.engine.ProcessEngine.getTom(ProcessEngine.java:8997) RETURN Tom= com.ibm.bpe.database.TomExtended@ac888642 [ inGlobalTransaction : true, suspended : false , uncommittedUpdates : true, pooled : false, cacheVisibility : false]
+com.ibm.bpe.engine.ProcessEngine.getTom(ProcessEngine.java:8997) RETURN Tom= com.ibm.bpe.database.TomExtended@ac888642 [ inGlobalTransaction : true, suspended : false , uncommittedUpdates : true, pooled : false, cacheVisibility : false]
+com.ibm.bpe.engine.CallbackForHumanTaskManager.resolveProcessContext(CallbackForHumanTaskManager.java:691) Respectivity activity instance resolved to: _AI:9004014d.7ce5f45f.fec7573f.ec4300a8
+com.ibm.bpe.engine.BpelAssignmentHandler.resolveContextData(BpelAssignmentHandler.java:1417) ENTRY Trying to resolve wf:variable.prioridadeOcorrencia  on _PI:9003014d.7ce5b8ac.fec7573f.ec430033/_AI:9004014d.7ce5f45f.fec7573f.ec4300a8
+com.ibm.bpe.engine.ProcessEngine.getTom(ProcessEngine.java:8997) RETURN Tom= com.ibm.bpe.database.TomExtended@ac888642 [ inGlobalTransaction : true, suspended : false , uncommittedUpdates : true, pooled : false, cacheVisibility : false]
+com.ibm.bpe.engine.BpelAssignmentHandler.resolveContextData(BpelAssignmentHandler.java:1427) Only resolving variables, new key is: prioridadeOcorrencia
+com.ibm.bpe.engine.BpelAssignmentHandler.retrieveInputMessage(BpelAssignmentHandler.java:1870) Retrieved message null
+com.ibm.bpe.database.Tom.getActivityInstanceB(Tom.java:12926) (com.ibm.bpe.database.ActivityInstanceB: PNUDx)
+com.ibm.bpe.engine.BpelVariableHandler.resolveXPath(BpelVariableHandler.java:2386) ENTRY prioridadeOcorrencia, is currentVariable set: false, is messageType set: false
+com.ibm.bpe.engine.BpelVariableHandler.resolveXPath(BpelVariableHandler.java:2400) XPath expression just refers a simple typed variable: prioridadeOcorrencia
+com.ibm.bpe.engine.BpelVariableHandler.getVariableData(BpelVariableHandler.java:314) ENTRY
+com.ibm.bpe.engine.BpelVariableHandler.getScopedVariableInstanceB(BpelVariableHandler.java:218) ENTRY prioridadeOcorrencia
+com.ibm.bpe.engine.BpelVariableHandler.getVariableTemplateForActivity(BpelVariableHandler.java:1461) ENTRY EncaminharOcorrenciaTratamento_Invoke prioridadeOcorrencia
+com.ibm.bpe.engine.BpelVariableHandler.getVariableTemplateForActivity(BpelVariableHandler.java:1487) (com.ibm.bpe.database.VariableStackTemplateB: Pnudx)
+com.ibm.bpe.engine.BpelVariableHandler.getVariableTemplateForActivity(BpelVariableHandler.java:1512) RETURN
+com.ibm.bpe.engine.BpelVariableHandler.getScopedVariableInstanceBfromEHStack(BpelVariableHandler.java:148) ENTRY
+com.ibm.bpe.engine.BpelVariableHandler.getScopedVariableInstanceBfromEHStack(BpelVariableHandler.java:182) RETURN (com.ibm.bpe.database.ScopedVariableInstanceB: PnUDx)
+com.ibm.bpe.engine.BpelVariableHandler.getScopedVariableInstanceB(BpelVariableHandler.java:238) RETURN (com.ibm.bpe.database.ScopedVariableInstanceB: PnUDx)
+com.ibm.bpe.engine.BpelVariableHandler.getVariableData(BpelVariableHandler.java:341) RETURN
+com.ibm.bpe.engine.BpelVariableHandler.resolveXPath(BpelVariableHandler.java:2404) RETURN 10
+com.ibm.bpe.engine.BpelAssignmentHandler.resolveContextData(BpelAssignmentHandler.java:1628) RETURN 10
+com.ibm.bpe.engine.CallbackForHumanTaskManager.resolveProcessContext(CallbackForHumanTaskManager.java:732) Resolved wf:variable.prioridadeOcorrencia to 10.
+com.ibm.bpe.engine.CallbackForHumanTaskManager.resolveProcessContext(CallbackForHumanTaskManager.java:741) RETURN
+com.ibm.task.spi.BPELFlowManagerPlugin.resolveProcessContext(BPELFlowManagerPlugin.java:1118) RETURN 10
+com.ibm.task.core.VariableHandler.convertResult(VariableHandler.java:263) ENTRY ResultObj = 10 - ContextKey = wf:variable.prioridadeOcorrencia
+com.ibm.task.core.VariableHandler.convertResult(VariableHandler.java:277) type String([])
+com.ibm.task.core.VariableHandler.convertResult(VariableHandler.java:329) RETURN 10
+com.ibm.task.core.VariableHandler.getContextData(VariableHandler.java:1434) Resolved context variable: wf:variable.prioridadeOcorrencia ==> 10
+com.ibm.task.core.VariableHandler.getContextData(VariableHandler.java:1454) RETURN
+com.ibm.task.core.VariableHandler.replaceVariables(VariableHandler.java:1897) RETURN 10
+com.ibm.task.core.CoreHelper.resolveTaskPriority(CoreHelper.java:5166) RETURN task priority: 10
+com.ibm.task.core.CoreHelper.replaceVariablesForDescription(CoreHelper.java:5272) ENTRY IniciarTratamento$SLAAdminTask / _TKI:a01b014d.7ce61149.fec7573f.ec4300a9
+com.ibm.bpe.database.DbAccTaskInstLDesc.openFetchByTKIID(DbAccTaskInstLDesc.java:513) SELECT TKIID, LOCALE, CONTAINMENT_CONTEXT_ID, DISPLAY_NAME, DESCRIPTION, VERSION_ID FROM BPM8BPC.TASK_INST_LDESC_T WHERE (TKIID = HEXTORAW(?)) 
+com.ibm.bpe.database.DbAccTaskInstLDesc.openFetchByTKIID(DbAccTaskInstLDesc.java:519) set 1 = _TKI:a01b014d.7ce61149.fec7573f.ec4300a9
+com.ibm.task.core.CoreHelper.replaceVariablesForDescription(CoreHelper.java:5321) RETURN IniciarTratamento$SLAAdminTask / _TKI:a01b014d.7ce61149.fec7573f.ec4300a9
+com.ibm.task.core.observer.TaskObserverWork.isContextNeedsToBeSaved(TaskObserverWork.java:171) ENTRY
+com.ibm.task.util.HTMEnvironment.isObserverEnabled(HTMEnvironment.java:1418) ENTRY Check if 'CEI' is part of the observer list currently configured.
+com.ibm.bpe.util.Environment.get(Environment.java:175) ENTRY HTMStateObservers
+com.ibm.bpe.util.Environment.get(Environment.java:190) RETURN [CEI]
+com.ibm.task.util.HTMEnvironment.isObserverEnabled(HTMEnvironment.java:1432) Check observer plugin 'CEI'.
+com.ibm.task.util.HTMEnvironment.isObserverEnabled(HTMEnvironment.java:1443) RETURN Is enabled = true
+com.ibm.task.core.observer.TaskObserverWork.isContextNeedsToBeSaved(TaskObserverWork.java:214) RETURN true
+com.ibm.task.core.observer.TaskObserverContext.<init>(TaskObserverContext.java:75) ENTRY
+com.ibm.bpe.database.DbAccTaskContext.select(DbAccTaskContext.java:530) SELECT TKIID, CONTAINMENT_CONTEXT_ID, SERVICE_CONTEXT, VERSION_ID FROM BPM8BPC.TASK_CONTEXT_T WHERE (TKIID = HEXTORAW(?))
+com.ibm.bpe.database.DbAccTaskContext.select(DbAccTaskContext.java:535) set 1 = _TKI:a01b014d.7ce61149.fec7573f.ec4300a9
+com.ibm.bpe.database.Tom.newTaskContext(Tom.java:18207) ENTRY _TKI:a01b014d.7ce61149.fec7573f.ec4300a9
+com.ibm.bpe.database.Tom.newTaskContext(Tom.java:18212) RETURN
+com.ibm.task.core.CoreHelper.getContainmentCtxIdForTaskArtifacts(CoreHelper.java:3276) ENTRY _TKI:a01b014d.7ce61149.fec7573f.ec4300a9
+com.ibm.task.core.CoreHelper.getContainmentCtxIdForTaskArtifacts(CoreHelper.java:3286) topCCID=_PI:9003014d.7ce5b8ac.fec7573f.ec430033
+com.ibm.task.core.CoreHelper.getContainmentCtxIdForTaskArtifacts(CoreHelper.java:3307) RETURN _PI:9003014d.7ce5b8ac.fec7573f.ec430033
+com.ibm.task.core.observer.TaskObserverContext.<init>(TaskObserverContext.java:92) RETURN
+com.ibm.task.core.TaskStateManager.setState(TaskStateManager.java:2238) ENTRY
+com.ibm.task.core.TaskStateManager.setState(TaskStateManager.java:2276) ENTRY Name  = IniciarTratamento$SLAAdminTask TKIID = _TKI:a01b014d.7ce61149.fec7573f.ec4300a9 Current State = STATE_INACTIVE (1) New State = STATE_INACTIVE (1)
+com.ibm.bpe.database.TomExtended.getWorkItemManager(TomExtended.java:1422) com.ibm.bpe.database.WorkItemManagerImpl@43b97a4e
+com.ibm.task.core.EventManager.handleObserverEvent(EventManager.java:6939) ENTRY 51,001 com.ibm.bpe.database.TaskInstance@92d9d68f Current Callontext:  - IsTaskAdmin = true - IsTaskMonitor = true - IsWorkBasketSysAdmin = false - IsBusinessCategorySysAdmin = false - userName = admin1, groupNames = [cn=G_BPM_BP4_GERENCIAL,o=defaultWIMFileBasedRealm, cn=G_BPM_BP4_ADMCELULA,o=defaultWIMFileBasedRealm, cn=G_BPM_BP4_ADMPROCESSO,o=defaultWIMFileBasedRealm, cn=G_BPM_BP4_INIPROCESSO,o=defaultWIMFileBasedRealm, cn=GRUPO_C,o=defaultWIMFileBasedRealm, cn=GRUPO_A,o=defaultWIMFileBasedRealm, cn=G_BPM_BP4_ADMTAREFA,o=defaultWIMFileBasedRealm, cn=G_BPM_BP4_OPERACIONAL,o=defaultWIMFileBasedRealm, cn=GRUPO_B,o=defaultWIMFileBasedRealm] - caseSensitivePrincipal = admin1 - ApplicationName = null - Action = 0 com.ibm.task.core.observer.StateObserverContextImpl@c4f5267d
+com.ibm.task.core.CoreHelper.getContainmentCtxIdForTaskArtifacts(CoreHelper.java:3276) ENTRY _TKI:a01b014d.7ce61149.fec7573f.ec4300a9
+com.ibm.task.core.CoreHelper.getContainmentCtxIdForTaskArtifacts(CoreHelper.java:3286) topCCID=_PI:9003014d.7ce5b8ac.fec7573f.ec430033
+com.ibm.task.core.CoreHelper.getContainmentCtxIdForTaskArtifacts(CoreHelper.java:3307) RETURN _PI:9003014d.7ce5b8ac.fec7573f.ec430033
+com.ibm.task.spi.BPELFlowManagerPlugin.observeEvent(BPELFlowManagerPlugin.java:473) ENTRY
+com.ibm.bpe.framework.ProcessEnginePool.getInstance(ProcessEnginePool.java:91) ENTRY
+com.ibm.bpe.framework.ProcessEnginePool.getInstance(ProcessEnginePool.java:95) RETURN com.ibm.bpe.framework.ProcessEnginePool@f61135cc
+com.ibm.bpe.framework.ProcessEnginePool.createNonReusableEngine(ProcessEnginePool.java:83) ENTRY
+com.ibm.bpe.engine.ProcessEngine.setIsReusable(ProcessEngine.java:9811) new reusability: false
+com.ibm.bpe.framework.ProcessEnginePool.createNonReusableEngine(ProcessEnginePool.java:86) RETURN com.ibm.bpe.engine.ProcessEngine@ced8bbd
+com.ibm.bpe.database.helper.TomAbstractFactory.getTom(TomAbstractFactory.java:114) ENTRY
+com.ibm.bpe.database.helper.DbTransactionHelperImpl.isInGlobalTransaction(DbTransactionHelperImpl.java:79) true
+com.ibm.bpe.database.helper.TomAbstractFactory$UsedTomMap.get(597) ENTRY TomKey [0000009f, 1938028020], used for key : [com.ibm.bpe.database.TomExtended@ac888642 [ inGlobalTransaction : true, suspended : false , uncommittedUpdates : true, pooled : false, cacheVisibility : false]]
+com.ibm.bpe.database.helper.TomAbstractFactory$UsedTomMap.get(607) RETURN com.ibm.bpe.database.TomExtended@ac888642 [ inGlobalTransaction : true, suspended : false , uncommittedUpdates : true, pooled : false, cacheVisibility : false]
+com.ibm.bpe.database.helper.TomAbstractFactory.getTom(TomAbstractFactory.java:180) RETURN com.ibm.bpe.database.TomExtended@ac888642 [ inGlobalTransaction : true, suspended : false , uncommittedUpdates : true, pooled : false, cacheVisibility : false]
+com.ibm.bpe.database.TomExtended.registerStateChangeCallback(TomExtended.java:300) com.ibm.bpe.engine.ProcessEngine@ced8bbd
+com.ibm.bpe.engine.ProcessEngine.getTom(ProcessEngine.java:8992) cache Tom and register StateChangeCallback. Tom= com.ibm.bpe.database.TomExtended@ac888642 [ inGlobalTransaction : true, suspended : false , uncommittedUpdates : true, pooled : false, cacheVisibility : false]
+com.ibm.bpe.engine.ProcessEngine.getTom(ProcessEngine.java:8997) RETURN Tom= com.ibm.bpe.database.TomExtended@ac888642 [ inGlobalTransaction : true, suspended : false , uncommittedUpdates : true, pooled : false, cacheVisibility : false]
+com.ibm.bpe.engine.ProcessEngine.setEventLocalCount(ProcessEngine.java:10212) ENTRY 48
+com.ibm.bpe.engine.ProcessEngine.setEventLocalCount(ProcessEngine.java:10216) RETURN
+com.ibm.bpe.engine.ProcessEngine.setIsThreadContextRestored(ProcessEngine.java:10272) isThreadContextRestored: true
+com.ibm.bpe.engine.ProcessEngine.getTom(ProcessEngine.java:8997) RETURN Tom= com.ibm.bpe.database.TomExtended@ac888642 [ inGlobalTransaction : true, suspended : false , uncommittedUpdates : true, pooled : false, cacheVisibility : false]
+com.ibm.task.spi.BPELFlowManagerPlugin.observeEvent(BPELFlowManagerPlugin.java:499) RETURN No BFM events for admin task!
+com.ibm.bpe.util.Environment.get(Environment.java:175) ENTRY HTMStateObservers
+com.ibm.bpe.util.Environment.get(Environment.java:190) RETURN [CEI]
+
