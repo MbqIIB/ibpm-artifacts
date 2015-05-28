@@ -1,0 +1,67 @@
+--------------------------------------------------------
+--  DDL for Procedure SPAH4136_BSCA_DMND_EXIS  Consulta demanda existente
+--------------------------------------------------------
+set define off;
+
+  CREATE OR REPLACE PROCEDURE "ORAAH41"."SPAH4136_BSCA_DMND_EXIS"
+  (VAGENCIA                  IN ORAAH41.TBAH4046_DMND_UNFD_OBRA.AGENCIA%TYPE,         
+   VDAT_CADT_DMND_INI        IN ORAAH41.TBAH4046_DMND_UNFD_OBRA.DAT_CADT_DMND%TYPE,
+   VDAT_CADT_DMND_TER        IN ORAAH41.TBAH4046_DMND_UNFD_OBRA.DAT_CADT_DMND%TYPE,
+   VNUM_DMND_AGENCIA         OUT NUMBER)
+IS
+
+BEGIN   
+    SELECT nvl(count(1), 0)  INTO VNUM_DMND_AGENCIA
+    FROM ORAAH41.TBAH4046_DMND_UNFD_OBRA
+   WHERE VAGENCIA = AGENCIA
+     AND (TO_DATE(DAT_CADT_DMND) >= TO_DATE(VDAT_CADT_DMND_INI)
+     AND  TO_DATE(DAT_CADT_DMND) <= TO_DATE(VDAT_CADT_DMND_TER));
+
+
+END  "SPAH4136_BSCA_DMND_EXIS";
+
+
+
+	public void teste() throws Exception{
+		
+		Context ctx = new InitialContext();
+		DataSource ds = (DataSource)ctx.lookup("jdbc/WPSDB");
+		java.sql.Connection conn = ds.getConnection();
+		
+		
+		
+		
+//		Statement stmt = conn.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
+//		ResultSet rs = stmt.executeQuery(" SELECT taskid,nextfiretime,CREATETIME,REPEATSLEFT " +
+//										 " FROM TASK WHERE TASKID = ");
+//		rs.afterLast();
+//		while (rs.previous()) {
+//			tarefa.setId(rs.getString("taskid"));
+//			tarefa.setDisparo(new Date(rs.getLong("nextfiretime")));
+//			tarefa.setCriacaoTarefa(new Date(rs.getLong("CREATETIME")));
+//			tarefa.setRepeticoesRemanescentes(rs.getInt("REPEATSLEFT"));
+//		}
+		
+		String VAGENCIA = "";
+		java.sql.Date VDAT_CADT_DMND_INI = new java.sql.Date(5555l);
+		java.sql.Date VDAT_CADT_DMND_TER = new java.sql.Date(5555l);
+		
+		CallableStatement cstmt = conn.prepareCall("{? = CALL ORAAH41.SPAH4136_BSCA_DMND_EXIS(?,?,?)}");
+		cstmt.registerOutParameter(1, Types.VARCHAR);
+		
+		cstmt.setString(2, VAGENCIA);
+		cstmt.setDate(3, VDAT_CADT_DMND_INI);
+		cstmt.setDate(4, VDAT_CADT_DMND_TER);
+		cstmt.executeUpdate();
+		
+		String VNUM_DMND_AGENCIA = cstmt.getString(1);
+		
+		
+		Class.forName("oracle.jdbc.driver.OracleDriver");
+		Connection connection = DriverManager.getConnection(
+				"jdbc:oracle:thin:@localhost:1521:mkyong", "username",
+				"password");
+		
+		
+		
+	}
